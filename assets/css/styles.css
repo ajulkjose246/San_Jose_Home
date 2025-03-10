@@ -1,0 +1,713 @@
+/* Custom styles */
+:root {
+    --primary-color: #ff6b35;
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.navbar {
+    background-color: #000000;  /* Solid black background for mobile */
+}
+
+/* Add this media query for small devices */
+@media (max-width: 991px) {
+    .navbar {
+        background-color: #000000;  /* Solid black background for mobile */
+    }
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('../img/bg/bg-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 2rem;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+.btn-outline-light {
+    padding: 0.75rem 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Add these styles for nav-link hover effect */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0000 !important; /* Using !important to override Bootstrap's default hover color */
+}
+
+/* Update typography styles */
+.display-1 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 3rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}
+
+/* Progress Updates Section */
+.progress-updates {
+    background-color: #101010;
+    padding: 80px 0;
+}
+
+.progress-updates .card {
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.progress-updates .card:hover {
+    transform: translateY(-5px);
+    background-color: #202020;
+}
+
+.progress-updates .card-body {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.progress-updates .card-title {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.progress-updates .text-muted {
+    color: #888 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.progress-updates .card-text {
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+.progress-updates .text-orange {
+    color: var(--primary-color);
+}
+
+.progress-updates .text-orange:hover {
+    color: #ff8255;
+}
+
+/* Add these to your existing Progress Updates styles */
+.progress-updates .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.progress-updates .card {
+    overflow: hidden;
+}
+
+.progress-updates .card:hover .card-img-top {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Timeline styles */
+.timeline-badge {
+    position: absolute;
+    top: 180px; /* Adjust based on your image height */
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.timeline-date {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-50%);
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.timeline-dot::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline-badge {
+        top: 160px;
+    }
+}
+
+/* Add these to your Progress Updates styles */
+.title-separator {
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title-separator::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3px;
+    width: 40px;
+    height: 9px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.text-uppercase {
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.progress-updates .display-5 {
+    font-weight: 600;
+}
+
+/* Mission Section Styles */
+.mission-section {
+    background-color: #101010;
+    padding: 100px 0;
+}
+
+.mission-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-purple { background-color: #6b2c91; }
+.card-blue { background-color: #3498db; }
+.card-purple-dark { background-color: #4a1f64; }
+
+.mission-icon {
+    height: 200px;
+    overflow: hidden;
+}
+
+.mission-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover .mission-icon img {
+    transform: scale(1.1);
+}
+
+.mission-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.mission-tag {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.mission-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.separator {
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.mission-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.quote-box {
+    background-color: rgba(0,0,0,0.2);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.quote-author {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: block;
+}
+
+.mission-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.arrow-icon {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.mission-link:hover {
+    color: #ff8255;
+}
+
+.mission-link:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+@media (max-width: 991px) {
+    .mission-card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+    background-color: #101010;
+    overflow: hidden;
+}
+
+.gallery-row {
+    position: relative;
+}
+
+.gallery-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.gallery-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay h5 {
+    color: white;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.gallery-overlay p {
+    color: var(--primary-color);
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-body {
+    position: relative;
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.btn-close-white {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+/* Footer Styles */
+.footer-section {
+    background-color: #0a0a0a;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--primary-color) !important;
+}
+
+.footer-bottom {
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+.about-section {
+    background-color: #101010;
+    padding-top: 120px; /* Account for fixed navbar */
+}
+
+.content-wrapper {
+    line-height: 1.8;
+}
+
+.mission-quote, .prayer-section {
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.mission-quote:hover, .prayer-section:hover {
+    transform: translateX(10px);
+}
+
+.fst-italic {
+    font-style: italic;
+}
+
+.ministry-leaders-section {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 3rem;
+}
+
+.leader-profile img {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.leader-profile:hover img {
+    transform: scale(1.02);
+}
+
+.quote-box.bg-black {
+    border-left: 4px solid var(--primary-color);
+}
+
+.leader-image {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px) {
+    .leader-image {
+        min-height: 300px;
+    }
+}
+
+.vision-content {
+    position: relative;
+}
+
+.vision-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.mission-highlight {
+    border-left: 4px solid var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.vision-quote {
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.vision-quote:hover {
+    transform: translateX(10px);
+}
+
+.quote-box {
+    border-left: 4px solid var(--primary-color);
+}
+
+.quote-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.volunteer-content .info-card {
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.volunteer-content .info-card:hover {
+    transform: translateX(10px);
+}
+
+.contact-card {
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateX(10px);
+    background-color: #1a1a1a !important;
+}
+
+.contact-details h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-card a {
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--primary-color) !important;
+}
+
+.website-link .btn {
+    transition: all 0.3s ease;
+}
+
+.website-link .btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Contact Form Styles */
+.contact-form {
+    border-left: 4px solid var(--primary-color);
+}
+
+.form-control {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    background-color: #1a1a1a !important;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25);
+}
+
+.form-control::placeholder {
+    color: #666;
+}
+
+/* Info Cards */
+.info-card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card a {
+    transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Social Media */
+.social-icons .btn {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons .btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}

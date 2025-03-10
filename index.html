@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-white">San Jose</span><span class="text-orange"> Home</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about_us.html">What We Do</a></li>
+                            <li><a class="dropdown-item" href="ministry_leaders.html">Ministry Leaders</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html">Vision</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="involvedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Get Involved
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="involvedDropdown">
+                            <li><a class="dropdown-item" href="volunteer.html">Become a Volunteer</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact Now</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-1 text-white mb-2">Building</h1>
+                    <h1 class="display-1 text-white mb-2">the</h1>
+                    <h1 class="display-1 text-orange mb-4">San Jose Home</h1>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary me-3">Donate Now</a>
+                        <a href="#" class="btn btn-outline-light">Progress Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Updates Section -->
+    <section class="progress-updates py-5">
+        <div class="container">
+            <!-- Add this title section -->
+            <div class="text-center mb-5">
+                <h6 class="text-orange text-uppercase fw-bold mb-2">Our Journey</h6>
+                <h2 class="display-5 text-white mb-4">Building Progress Timeline</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="timeline-badge">
+                            <span class="timeline-date">2024</span>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <img src="assets/img/progress/1.jpeg" class="card-img-top" alt="Medical Attention">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="timeline-dot"></div>
+                                <h6 class="text-muted mb-0">Jul 19, 2024</h6>
+                            </div>
+                            <h4 class="card-title text-white mb-3">San Jose Home Offers Medical Attention to Seniors</h4>
+                            <p class="card-text text-muted">San Jose Home Offers Medical Attention to Seniors</p>
+                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="timeline-badge">
+                            <span class="timeline-date">2023</span>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <img src="assets/img/progress/2.jpeg" class="card-img-top" alt="Blessing Ceremony">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="timeline-dot"></div>
+                                <h6 class="text-muted mb-0">Aug 31, 2023</h6>
+                            </div>
+                            <h4 class="card-title text-white mb-3">Blessing of the San Jose Home</h4>
+                            <p class="card-text text-muted">Blessing of the San Jose Home</p>
+                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="timeline-badge">
+                            <span class="timeline-date">2023</span>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <img src="assets/img/progress/3.jpeg" class="card-img-top" alt="Construction Progress">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="timeline-dot"></div>
+                                <h6 class="text-muted mb-0">May 30, 2023</h6>
+                            </div>
+                            <h4 class="card-title text-white mb-3">San Jose Home is Rising Up</h4>
+                            <p class="card-text text-muted">San Jose Home is Rising Up</p>
+                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="timeline-badge">
+                            <span class="timeline-date">2023</span>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <img src="assets/img/progress/4.jpeg" class="card-img-top" alt="Project Updates">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="timeline-dot"></div>
+                                <h6 class="text-muted mb-0">Jan 10, 2023</h6>
+                            </div>
+                            <h4 class="card-title text-white mb-3">Updates on San Jose Home</h4>
+                            <p class="card-text text-muted">Updates on San Jose Home</p>
+                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0">
+                        <div class="timeline-badge">
+                            <span class="timeline-date">2022</span>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <img src="assets/img/progress/5.jpeg" class="card-img-top" alt="Prayer Service">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="timeline-dot"></div>
+                                <h6 class="text-muted mb-0">Aug 13, 2022</h6>
+                            </div>
+                            <h4 class="card-title text-white mb-3">Pray For Our San Jose Home</h4>
+                            <p class="card-text text-muted">Pray For Our San Jose Home</p>
+                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-orange text-uppercase fw-bold mb-2">Our Purpose</h6>
+                <h2 class="display-5 text-white mb-4">Serving With Compassion</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- What We Do -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <img src="assets/img/quotes/1.jpg" alt="What We Do">
+                        </div>
+                        <div class="mission-content">
+                            <span class="mission-tag">01</span>
+                            <h3 class="text-white">WHAT WE DO</h3>
+                            <div class="separator"></div>
+                            <p class="text-white-50">We are here to enable the deserving people in the state of Kerala to live their lives, especially in their old age, with dignity and self-esteem.</p>
+                            <div class="quote-box">
+                                <p class="quote text-white">"Whatever you did for one of these little brothers of mine, you have done it unto me."</p>
+                                <span class="quote-author">-Matthew 25:40</span>
+                            </div>
+                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Mission -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="mission-card card-purple">
+                        <div class="mission-icon">
+                            <img src="assets/img/quotes/2.jpg" alt="Our Mission">
+                        </div>
+                        <div class="mission-content">
+                            <span class="mission-tag">02</span>
+                            <h3 class="text-white">OUR MISSION</h3>
+                            <div class="separator"></div>
+                            <p class="text-white-50">We look forward to reaching out to the people of Kerala who are in dire need of life's essentials, especially in their old age.</p>
+                            <div class="quote-box">
+                                <p class="quote text-white">"The most terrible poverty is loneliness and the feeling of being unloved."</p>
+                                <span class="quote-author">-St. Teresa</span>
+                            </div>
+                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- San Jose Home -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="mission-card card-blue">
+                        <div class="mission-icon">
+                            <img src="assets/img/quotes/3.jpg" alt="San Jose Home">
+                        </div>
+                        <div class="mission-content">
+                            <span class="mission-tag">03</span>
+                            <h3 class="text-white">SAN JOSE HOME</h3>
+                            <div class="separator"></div>
+                            <p class="text-white-50">To house low income and middle-class elderly and sick people who do not have any family member to take care of them.</p>
+                            <div class="quote-box">
+                                <p class="quote text-white">"Not all of us can do great things. But we can do small things with great love."</p>
+                                <span class="quote-author">-St. Teresa</span>
+                            </div>
+                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get Involved -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="mission-card card-purple-dark">
+                        <div class="mission-icon">
+                            <img src="assets/img/quotes/4.jpg" alt="Get Involved">
+                        </div>
+                        <div class="mission-content">
+                            <span class="mission-tag">04</span>
+                            <h3 class="text-white">GET INVOLVED</h3>
+                            <div class="separator"></div>
+                            <p class="text-white-50">We are always seeking volunteers to help us with fundraising, website maintenance, and marketing.</p>
+                            <div class="quote-box">
+                                <p class="quote text-white">"Let us not grow weary of doing good. For in due season, we will reap."</p>
+                                <span class="quote-author">-Galatians 6:9</span>
+                            </div>
+                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-orange text-uppercase fw-bold mb-2">Our Gallery</h6>
+                <h2 class="display-5 text-white mb-4">Moments We Captured</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+
+            <!-- First Row -->
+            <div class="gallery-row mb-4">
+                <div class="gallery-scroll">
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g1.webp" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g2.webp" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g3.webp" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g4.webp" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g5.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g6.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g7.png" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g8.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g9.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g10.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g11.jpg" alt="Gallery Image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="gallery-row">
+                <div class="gallery-scroll">
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g12.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g13.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g14.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g15.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g16.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g17.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g18.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g19.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g20.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g21.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g22.jpg" alt="Gallery Image">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/gallery/g23.jpg" alt="Gallery Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this modal after the gallery section -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="" class="modal-img" alt="Expanded Gallery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Add this footer section before the closing body tag -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">
+                        <span class="text-white">San Jose</span>
+                        <span class="text-orange"> Home</span>
+                    </h4>
+                    <p class="text-white-50">Providing care and support for the elderly in Kerala, ensuring dignity and comfort in their golden years.</p>
+                </div>
+
+                <!-- Address -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4">Office Address</h5>
+                    <address class="text-white-50">
+                        San Jose Home<br>
+                        Cheenikuzhy P.O. 685595<br>
+                        Idukki Dt.<br>
+                        Kerala<br>
+                        India
+                    </address>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-orange me-2"></i>
+                            <a href="mailto:sanjosehome2023@gmail.com" class="text-white-50">sanjosehome2023@gmail.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-orange me-2"></i>
+                            <span class="text-white-50">Office/Reception: + 91 89213 04220</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-orange me-2"></i>
+                            <span class="text-white-50">Director: + 91 97785 74319</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom text-center pt-4 mt-4 border-top border-secondary">
+                <p class="text-white-50 mb-0">&copy; 2024 San Jose Home. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
