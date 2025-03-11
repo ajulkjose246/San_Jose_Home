@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -24,25 +26,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About Us
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="about_us.html">What We Do</a></li>
-                            <li><a class="dropdown-item" href="ministry_leaders.html">Ministry Leaders</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="vision.html">Vision</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="involvedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Get Involved
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="involvedDropdown">
-                            <li><a class="dropdown-item" href="volunteer.html">Become a Volunteer</a></li>
-                            <li><a class="dropdown-item" href="contact.html">Contact Now</a></li>
-                        </ul>
-                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="our_team.html">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    
                 </ul>
             </div>
         </div>
@@ -54,125 +41,69 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-1 text-white mb-2">Building</h1>
-                    <h1 class="display-1 text-white mb-2">the</h1>
+                    <h1 class="display-1 text-white mb-2">Welcome to</h1>
                     <h1 class="display-1 text-orange mb-4">San Jose Home</h1>
+                    <p class="h3 text-white mb-4">A peaceful and joyful haven for the senior citizens</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary me-3">Donate Now</a>
-                        <a href="#" class="btn btn-outline-light">Progress Blog</a>
+                        <a href="#about" class="btn btn-primary me-3">More About Us</a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about" class="animate-scroll">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </header>
 
-    <!-- Progress Updates Section -->
-    <section class="progress-updates py-5">
-        <div class="container">
-            <!-- Add this title section -->
-            <div class="text-center mb-5">
-                <h6 class="text-orange text-uppercase fw-bold mb-2">Our Journey</h6>
-                <h2 class="display-5 text-white mb-4">Building Progress Timeline</h2>
+    <!-- Introduction Section -->
+    <section id="about" class="intro-section py-5">
+        <div class="container-fluid px-5">
+            <div class="section-title text-center mb-5">
+                <h6 class="badge bg-primary-subtle text-primary mb-2">About San Jose Home</h6>
+                <h2 class="display-5 text-white mb-4">A Haven for Senior Citizens</h2>
                 <div class="title-separator mx-auto"></div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="content-card">
+                        <div class="row g-4">
+                            <div class="col-md-12">
+                                <div class="about-content">
+                                    <!-- Introduction Paragraph -->
+                                    <div class="mb-4">
+                                        <p class="lead text-white-75">San Jose Home presents a beautiful haven for
+                                            families concerned about their elderly parents living alone, by offering
+                                            assisted living, comprehensive personal care addressing their physical,
+                                            spiritual, and emotional needs. The contemporary economic and social
+                                            environment often necessitates dual-income households, compelling both
+                                            spouses to work. This situation can lead to concerns regarding the safety,
+                                            security, and well-being of elderly parents in the absence of their
+                                            children. San Jose Home provides a perfect solution for these families,
+                                            offering a secure, comfortable, and homely atmosphere combined with
+                                            personalized care.
+                                            The necessity for such care becomes even more pronounced for elderly
+                                            individuals who do not receive adequate attention due to various reasons,
+                                            including poverty, homelessness, insufficient income, and the absence of
+                                            their children during critical times. At San Jose Home, the assisted living
+                                            facilities and compassionate care enables the senior citizens to overcome
+                                            loneliness, insecurity, and health issues, attain peace and happiness with
+                                            confidence.
+                                            San Jose Home, managed by the Assisi Sisters of Mary Immaculate, is
+                                            committed to supporting the senior citizens a secure, safe and comfortable
+                                            living environment, caring for all their needs.
+                                            The home's mission is to provide a nurturing and secure haven for the
+                                            elderly, thereby fostering an atmosphere of dignity, respect, and
+                                            comprehensive care for all residents, regardless of their social or economic
+                                            status
 
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0">
-                        <div class="timeline-badge">
-                            <span class="timeline-date">2024</span>
-                            <div class="timeline-line"></div>
-                        </div>
-                        <img src="assets/img/progress/1.jpeg" class="card-img-top" alt="Medical Attention">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="timeline-dot"></div>
-                                <h6 class="text-muted mb-0">Jul 19, 2024</h6>
-                            </div>
-                            <h4 class="card-title text-white mb-3">San Jose Home Offers Medical Attention to Seniors</h4>
-                            <p class="card-text text-muted">San Jose Home Offers Medical Attention to Seniors</p>
-                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
-                        </div>
-                    </div>
-                </div>
+                                        </p>
+                                    </div>
 
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0">
-                        <div class="timeline-badge">
-                            <span class="timeline-date">2023</span>
-                            <div class="timeline-line"></div>
-                        </div>
-                        <img src="assets/img/progress/2.jpeg" class="card-img-top" alt="Blessing Ceremony">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="timeline-dot"></div>
-                                <h6 class="text-muted mb-0">Aug 31, 2023</h6>
-                            </div>
-                            <h4 class="card-title text-white mb-3">Blessing of the San Jose Home</h4>
-                            <p class="card-text text-muted">Blessing of the San Jose Home</p>
-                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0">
-                        <div class="timeline-badge">
-                            <span class="timeline-date">2023</span>
-                            <div class="timeline-line"></div>
-                        </div>
-                        <img src="assets/img/progress/3.jpeg" class="card-img-top" alt="Construction Progress">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="timeline-dot"></div>
-                                <h6 class="text-muted mb-0">May 30, 2023</h6>
+                                </div>
                             </div>
-                            <h4 class="card-title text-white mb-3">San Jose Home is Rising Up</h4>
-                            <p class="card-text text-muted">San Jose Home is Rising Up</p>
-                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0">
-                        <div class="timeline-badge">
-                            <span class="timeline-date">2023</span>
-                            <div class="timeline-line"></div>
-                        </div>
-                        <img src="assets/img/progress/4.jpeg" class="card-img-top" alt="Project Updates">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="timeline-dot"></div>
-                                <h6 class="text-muted mb-0">Jan 10, 2023</h6>
-                            </div>
-                            <h4 class="card-title text-white mb-3">Updates on San Jose Home</h4>
-                            <p class="card-text text-muted">Updates on San Jose Home</p>
-                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0">
-                        <div class="timeline-badge">
-                            <span class="timeline-date">2022</span>
-                            <div class="timeline-line"></div>
-                        </div>
-                        <img src="assets/img/progress/5.jpeg" class="card-img-top" alt="Prayer Service">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="timeline-dot"></div>
-                                <h6 class="text-muted mb-0">Aug 13, 2022</h6>
-                            </div>
-                            <h4 class="card-title text-white mb-3">Pray For Our San Jose Home</h4>
-                            <p class="card-text text-muted">Pray For Our San Jose Home</p>
-                            <a href="#" class="text-orange text-decoration-none">Read More →</a>
                         </div>
                     </div>
                 </div>
@@ -180,92 +111,52 @@
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission-section py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="text-orange text-uppercase fw-bold mb-2">Our Purpose</h6>
-                <h2 class="display-5 text-white mb-4">Serving With Compassion</h2>
+    <!-- About Section -->
+    <section class="about-section py-5">
+        <div class="container-fluid px-5">
+            <div class="section-title text-center mb-5">
+                <h6 class="badge bg-primary-subtle text-primary mb-2">Our Legacy of Care</h6>
+                <h2 class="display-5 text-white mb-4">A Mission of Compassion</h2>
                 <div class="title-separator mx-auto"></div>
             </div>
-
-            <div class="row g-4">
-                <!-- What We Do -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="mission-card">
-                        <div class="mission-icon">
-                            <img src="assets/img/quotes/1.jpg" alt="What We Do">
-                        </div>
-                        <div class="mission-content">
-                            <span class="mission-tag">01</span>
-                            <h3 class="text-white">WHAT WE DO</h3>
-                            <div class="separator"></div>
-                            <p class="text-white-50">We are here to enable the deserving people in the state of Kerala to live their lives, especially in their old age, with dignity and self-esteem.</p>
-                            <div class="quote-box">
-                                <p class="quote text-white">"Whatever you did for one of these little brothers of mine, you have done it unto me."</p>
-                                <span class="quote-author">-Matthew 25:40</span>
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="content-card">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="about-content">
+                                    <h4 class="text-orange mb-3">Our Foundation</h4>
+                                    <p>San Jose Home, nestled in Cheenikuzhy, near Thodupuzha, Kerala, is a dedicated
+                                        project by the Assisi Sisters of Mary Immaculate (A.S.M.I.), St. Joseph's
+                                        Province. Established with the vision of providing a safe and secure living
+                                        environment for senior citizens, our home represents the congregation's
+                                        commitment to compassionate elderly care.</p>
+                                </div>
                             </div>
-                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Our Mission -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="mission-card card-purple">
-                        <div class="mission-icon">
-                            <img src="assets/img/quotes/2.jpg" alt="Our Mission">
-                        </div>
-                        <div class="mission-content">
-                            <span class="mission-tag">02</span>
-                            <h3 class="text-white">OUR MISSION</h3>
-                            <div class="separator"></div>
-                            <p class="text-white-50">We look forward to reaching out to the people of Kerala who are in dire need of life's essentials, especially in their old age.</p>
-                            <div class="quote-box">
-                                <p class="quote text-white">"The most terrible poverty is loneliness and the feeling of being unloved."</p>
-                                <span class="quote-author">-St. Teresa</span>
+                            <div class="col-md-6">
+                                <div class="about-content">
+                                    <h4 class="text-orange mb-3">Our Heritage</h4>
+                                    <p>The A.S.M.I., founded by Servant of God Msgr. Joseph Kandathil on April 2, 1949,
+                                        has a rich legacy of humanitarian service. Our congregation's mission extends
+                                        across various healthcare facilities, educational institutions, and social
+                                        service centers, serving the most vulnerable in society.</p>
+                                </div>
                             </div>
-                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- San Jose Home -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="mission-card card-blue">
-                        <div class="mission-icon">
-                            <img src="assets/img/quotes/3.jpg" alt="San Jose Home">
-                        </div>
-                        <div class="mission-content">
-                            <span class="mission-tag">03</span>
-                            <h3 class="text-white">SAN JOSE HOME</h3>
-                            <div class="separator"></div>
-                            <p class="text-white-50">To house low income and middle-class elderly and sick people who do not have any family member to take care of them.</p>
-                            <div class="quote-box">
-                                <p class="quote text-white">"Not all of us can do great things. But we can do small things with great love."</p>
-                                <span class="quote-author">-St. Teresa</span>
+                            <div class="col-md-12 mt-4">
+                                <div class="about-content">
+                                    <h4 class="text-orange mb-3">Our Comprehensive Care Network</h4>
+                                    <p>The Assisi Sisters serve in diverse healthcare settings including general
+                                        hospitals, leprosy hospitals and asylums, homes for the aged, cancer care
+                                        facilities, HIV-AIDS centers, TB clinics, and rehabilitation centers for the
+                                        disabled. Our educational initiatives encompass nursing colleges, schools for
+                                        underprivileged children, and special education facilities for the deaf, blind,
+                                        and mentally challenged.</p>
+                                    <p class="mt-3">Beyond healthcare and education, our sisters are deeply involved in
+                                        evangelization, social work, and parish ministry. This holistic approach
+                                        reflects our unwavering commitment to community development and support,
+                                        ensuring dignity and comprehensive care for all those we serve.</p>
+                                </div>
                             </div>
-                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Get Involved -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="mission-card card-purple-dark">
-                        <div class="mission-icon">
-                            <img src="assets/img/quotes/4.jpg" alt="Get Involved">
-                        </div>
-                        <div class="mission-content">
-                            <span class="mission-tag">04</span>
-                            <h3 class="text-white">GET INVOLVED</h3>
-                            <div class="separator"></div>
-                            <p class="text-white-50">We are always seeking volunteers to help us with fundraising, website maintenance, and marketing.</p>
-                            <div class="quote-box">
-                                <p class="quote text-white">"Let us not grow weary of doing good. For in due season, we will reap."</p>
-                                <span class="quote-author">-Galatians 6:9</span>
-                            </div>
-                            <a href="#" class="mission-link">Learn More <i class="arrow-icon">→</i></a>
                         </div>
                     </div>
                 </div>
@@ -273,109 +164,471 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section py-5">
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission-section py-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="text-orange text-uppercase fw-bold mb-2">Our Gallery</h6>
-                <h2 class="display-5 text-white mb-4">Moments We Captured</h2>
+            <div class="section-title text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary mb-2">OUR PURPOSE</span>
+                <h2 class="display-5 mb-4">Vision & Mission</h2>
                 <div class="title-separator mx-auto"></div>
             </div>
 
-            <!-- First Row -->
-            <div class="gallery-row mb-4">
-                <div class="gallery-scroll">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g1.webp" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g2.webp" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g3.webp" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g4.webp" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g5.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g6.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g7.png" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g8.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g9.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g10.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g11.jpg" alt="Gallery Image">
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-6">
+                    <div class="vision-card h-100 p-4">
+                        <div class="card-icon mb-4">
+                            <i class="fas fa-eye fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="mb-4">Our Vision</h3>
+                        <p class="mb-0">To Facilitate the deserving senior citizens to lead lives marked by dignity,
+                            self-esteem and independence, by offering a secure, compassionate and nurturing environment.
+                        </p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Second Row -->
-            <div class="gallery-row">
-                <div class="gallery-scroll">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g12.jpg" alt="Gallery Image">
+                <div class="col-lg-6">
+                    <div class="mission-card h-100 p-4">
+                        <div class="card-icon mb-4">
+                            <i class="fas fa-bullseye fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="mb-4">Our Mission</h3>
+                        <p class="mb-0">To share compassionate love and care to the senior citizens, encouraging hope
+                            and promoting companionship to achieve mental, physical, emotional, and spiritual
+                            well-being. Personalized care by experienced professionals, combined with nutritious food
+                            and opportunities for physical and spiritual growth, ensures that the lives of senior
+                            citizens are comfortable and enriched.</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g13.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g14.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g15.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g16.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g17.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g18.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g19.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g20.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g21.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g22.jpg" alt="Gallery Image">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/g23.jpg" alt="Gallery Image">
+                </div>
+
+                <!-- New Section for Visionary -->
+                <div class="col-lg-12 mt-5">
+                    <div class="visionary-card bg-dark p-5 rounded-3">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                <div class="visionary-profile">
+                                    <div class="profile-icon mb-4">
+                                        <i class="fas fa-user-tie fa-4x text-orange"></i>
+                                    </div>
+                                    <h3 class="text-white mb-2">Fr. Jose Varickamackal</h3>
+                                    <div class="title-separator mx-auto my-3"></div>
+                                    <p class="text-orange">Spiritual Director & Founder</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="visionary-content ps-lg-4">
+                                    <h2 class="text-orange mb-4">Our Visionary</h2>
+                                    <div class="content-box p-4 rounded-3">
+                                        <p class="text-white mb-4">San Jose Home, which began its journey on August 17, 2023, was born from the vision of Fr. Jose Varickamackal, a dedicated priest of the Diocese of Kanjirapally. His unwavering commitment to serving the elderly led him to contribute his patrimony and personal funds towards this noble cause.</p>
+                                        <p class="text-white mb-0">Currently residing at San Jose Home, Fr. Varickamackal continues to guide the institution's progress while serving as the Spiritual Director, offering his services free of charge. His presence and ongoing dedication ensure that the home maintains its founding principles of compassionate care and spiritual guidance for all residents.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Add this modal after the gallery section -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content bg-dark">
-                <div class="modal-body p-0">
-                    <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img src="" class="modal-img" alt="Expanded Gallery Image">
+    <!-- Services Section -->
+    <section class="services-section py-5">
+        <div class="container-fluid px-5">
+            <div class="section-title text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary mb-2">WHAT WE OFFER</span>
+                <h2 class="display-5 mb-4">Our Services</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <!-- Accommodation Types -->
+                <div class="col-lg-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="service-icon mb-4 text-center">
+                            <i class="fas fa-home fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Accommodation Options</h4>
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="feature-box p-3 rounded-3 mb-3">
+                                    <h5 class="text-white mb-3">
+                                        <i class="fas fa-bed me-2 text-orange"></i>
+                                        General Rooms
+                                    </h5>
+                                    <ul class="service-list text-white-75">
+                                        <li>Wheelchair/walker-friendly bathrooms</li>
+                                        <li>Attached balcony</li>
+                                        <li>Shared accommodation (2 residents)</li>
+                                        <li>Fully furnished setup</li>
+                                    </ul>
+                                </div>
+                        </div>
+                            <div class="col-12">
+                                <div class="feature-box p-3 rounded-3">
+                                    <h5 class="text-white mb-3">
+                                        <i class="fas fa-star me-2 text-orange"></i>
+                                        Special Rooms
+                                    </h5>
+                                    <ul class="service-list text-white-75">
+                                        <li>Spacious living room & bedroom</li>
+                                        <li>Private balcony</li>
+                                        <li>Air conditioning</li>
+                                        <li>Smart TV & Wi-Fi</li>
+                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities & Services -->
+                <div class="col-lg-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="service-icon mb-4 text-center">
+                            <i class="fas fa-concierge-bell fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Facilities & Services</h4>
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="feature-box p-3 rounded-3">
+                                    <h5 class="text-white mb-3">
+                                        <i class="fas fa-house-user me-2 text-orange"></i>
+                                        Daily Amenities
+                                    </h5>
+                                    <ul class="service-list text-white-75">
+                                        <li>Regular housekeeping</li>
+                                        <li>Laundry facilities</li>
+                                        <li>Hot & cold water supply</li>
+                                        <li>Furnished rooms</li>
+                                    </ul>
+                                </div>
+                        </div>
+                            <div class="col-12">
+                                <div class="feature-box p-3 rounded-3">
+                                    <h5 class="text-white mb-3">
+                                        <i class="fas fa-user-md me-2 text-orange"></i>
+                                        Healthcare Support
+                                    </h5>
+                                    <ul class="service-list text-white-75">
+                            <li>Regular health monitoring</li>
+                                        <li>On-site clinic & medical team</li>
+                            <li>Emergency ambulance service</li>
+                                        <li>Professional counselling</li>
+                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Care -->
+                <div class="col-lg-4">
+                    <div class="service-card h-100 p-4">
+                        <div class="service-icon mb-4 text-center">
+                            <i class="fas fa-heart-pulse fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Total Care</h4>
+                        <div class="feature-box p-3 rounded-3">
+                            <div class="total-care-content text-white-75">
+                                <p class="mb-4">Residents will be cared for in the true spirit of service, including routine medical check-ups.</p>
+                                <div class="care-features">
+                                    <h5 class="text-white mb-3">
+                                        <i class="fas fa-hospital me-2 text-orange"></i>
+                                        Hospital Coordination
+                                    </h5>
+                                    <ul class="service-list text-white-75">
+                                        <li>Arrangement of hospitalization when needed</li>
+                                        <li>Coordination with guarantor/relatives</li>
+                                        <li>Management of medical arrangements</li>
+                                        <li>Additional expenses handled by residents</li>
+                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section py-5">
+        <div class="container-fluid px-5">
+            <div class="section-title text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary mb-2">OUR LOCATION</span>
+                <h2 class="display-5 text-white mb-4">How to Reach Us</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="location-card p-5 bg-dark rounded-4">
+                        <!-- Overview -->
+                        <div class="location-overview mb-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fas fa-map-marker-alt fa-2x text-orange me-3"></i>
+                                <h4 class="text-white mb-0">Our Location</h4>
+                            </div>
+                            <p class="text-white-75 lead">Cheenikuzhy is a rural village situated in the Udubannoor Panchayat, Thodupuzha Taluk, on the western side of Idukki District in Kerala State, approximately 19 kilometers from Thodupuzha.</p>
+                        </div>
+
+                        <div class="row g-4">
+                            <!-- Directions from Thodupuzha -->
+                            <div class="col-lg-6">
+                                <div class="direction-card p-4 rounded-3 h-100">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <i class="fas fa-route fa-2x text-orange me-3"></i>
+                                        <h5 class="text-white mb-0">From Thodupuzha</h5>
+                                    </div>
+                                    <div class="direction-steps">
+                                        <ul class="list-unstyled text-white-75">
+                                            <li class="mb-3">
+                                                <i class="fas fa-bus me-2 text-orange"></i>
+                                                Take the bus route through:
+                                                <ul class="list-unstyled ms-4 mt-2">
+                                                    <li>• Muthalakodom</li>
+                                                    <li>• Karimannoor</li>
+                                                    <li>• Udumbannoor</li>
+                                                    <li>• Parekkavala</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-road me-2 text-orange"></i>
+                                                From Parekkavala, take either of the two roads leading to San Jose Home (3.5 km)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Directions from Kattappana -->
+                            <div class="col-lg-6">
+                                <div class="direction-card  p-4 rounded-3 h-100">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <i class="fas fa-route fa-2x text-orange me-3"></i>
+                                        <h5 class="text-white mb-0">From Kattappana & Idukki</h5>
+                                    </div>
+                                    <div class="direction-steps">
+                                        <ul class="list-unstyled text-white-75">
+                                            <li class="mb-3">
+                                                <i class="fas fa-road me-2 text-orange"></i>
+                                                Take the Idukki-Moolamattom Road
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="fas fa-map-signs me-2 text-orange"></i>
+                                                Reach Paaramada Junction (4 km before Kulamavu Dam)
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-arrow-right me-2 text-orange"></i>
+                                                Take the tarred road on the right to San Jose Home (14 km from Paramada)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nature Note -->
+                        <div class="nature-note mt-5 p-4 direction-card rounded-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-leaf fa-2x text-orange me-3"></i>
+                                <p class="text-white-75 lead mb-0">San Jose Home is surrounded by lush greenery and hills, appealing to those who appreciate solitude and nature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uniqueness Section -->
+    <section class="uniqueness-section py-5">
+        <div class="container-fluid px-5">
+            <div class="section-title text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary mb-2">WHY CHOOSE US</span>
+                <h2 class="display-5 text-white mb-4">Uniqueness of San Jose Home</h2>
+                <div class="title-separator mx-auto"></div>
+                <p class="text-white-75 lead mt-4">A nurturing environment supporting the physical, emotional, and spiritual well-being of our residents</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <!-- Core Features -->
+                <div class="col-lg-4">
+                    <div class="feature-card p-4 h-100">
+                        <div class="feature-icon mb-4 text-center">
+                            <i class="fas fa-home-heart fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Core Features</h4>
+                        <ul class="feature-list text-white-75">
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Assisted Living and Nursing Home for 60+ years</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Wheelchair and walker friendly facilities</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Ramp, stairs and lift access</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Spacious rooms with modern amenities</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Open to both men and women</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Flexible payment options for all groups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Healthcare & Support -->
+                <div class="col-lg-4">
+                    <div class="feature-card p-4 h-100">
+                        <div class="feature-icon mb-4 text-center">
+                            <i class="fas fa-user-md fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Healthcare & Support</h4>
+                        <ul class="feature-list text-white-75">
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>24/7 qualified medical doctor available</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>On-site pharmacy facility</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Managed by Assisi Sisters of Mary Immaculate</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Professional medical staff from congregation</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Free counselling services</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Personalized healthy meals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Wellness & Activities -->
+                <div class="col-lg-4">
+                    <div class="feature-card p-4 h-100">
+                        <div class="feature-icon mb-4 text-center">
+                            <i class="fas fa-heart fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Wellness & Activities</h4>
+                        <ul class="feature-list text-white-75">
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Internationally qualified yoga trainer</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Indoor games and recreational activities</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Library with newspapers and magazines</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Chapel with daily Mass for Catholics</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>Resident Spiritual Director</li>
+                            <li><i class="fas fa-check-circle text-orange me-2"></i>24/7 CCTV surveillance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Room & Weather Section -->
+    <section class="guest-room-section py-5" style="background-color: #101010;">
+        <div class="container-fluid px-5">
+            <div class="section-title text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary mb-2">GUEST FACILITIES</span>
+                <h2 class="display-5 text-white mb-4">Guest Room & Location Details</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <!-- Guest Room Info -->
+                <div class="col-lg-6">
+                    <div class="feature-card p-4 h-100" style="background-color: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="feature-icon mb-4 text-center">
+                            <i class="fas fa-bed fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Guest Room Facilities</h4>
+                        <div class="guest-room-content">
+                            <div class="feature-box p-4 rounded-3" style="background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);">
+                                <ul class="feature-list text-white-75">
+                                    <li><i class="fas fa-check-circle text-orange me-2"></i>Spacious three-bed accommodation</li>
+                                    <li><i class="fas fa-check-circle text-orange me-2"></i>Available for residents' friends and family</li>
+                                    <li><i class="fas fa-check-circle text-orange me-2"></i>Short-term stay (typically one day)</li>
+                                    <li><i class="fas fa-check-circle text-orange me-2"></i>Prior booking required</li>
+                                    <li><i class="fas fa-check-circle text-orange me-2"></i>Optional food service available</li>
+                                    <li><i class="fas fa-check-circle text-orange me-2"></i>Chargeable service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Info -->
+                <div class="col-lg-6">
+                    <div class="feature-card p-4 h-100" style="background-color: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="feature-icon mb-4 text-center">
+                            <i class="fas fa-cloud-sun fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Climate & Weather</h4>
+                        <div class="weather-content">
+                            <div class="feature-box p-4 rounded-3" style="background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);">
+                                <p class="text-white-75 mb-4">Cheenikuzhy experiences generally pleasant weather year-round, though the summer months can be slightly warm and humid.</p>
+                                <div class="weather-features">
+                                    <ul class="feature-list text-white-75">
+                                        <li><i class="fas fa-temperature-low text-orange me-2"></i>Pleasant climate throughout the year</li>
+                                        <li><i class="fas fa-sun text-orange me-2"></i>Moderate summer temperatures</li>
+                                        <li><i class="fas fa-wind text-orange me-2"></i>Good ventilation</li>
+                                        <li><i class="fas fa-tree text-orange me-2"></i>Natural surroundings</li>
+                        </ul>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions & Administration Section -->
+    <section class="admissions-section py-5" style="background-color: #101010;">
+        <div class="container-fluid px-5">
+            <div class="section-title text-center mb-5">
+                <span class="badge bg-primary-subtle text-primary mb-2">JOIN OUR COMMUNITY</span>
+                <h2 class="display-5 text-white mb-4">Admissions & Administration</h2>
+                <div class="title-separator mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <!-- Admissions Process -->
+                <div class="col-lg-6">
+                    <div class="feature-card p-4 h-100" style="background-color: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="feature-icon mb-4 text-center">
+                            <i class="fas fa-file-signature fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Admission Process</h4>
+                        <div class="admission-steps">
+                            <div class="feature-box p-4 rounded-3" style="background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);">
+                                <ul class="feature-list text-white-75">
+                                    <li><i class="fas fa-1 text-orange me-2"></i>Visit San Jose Home in person</li>
+                                    <li><i class="fas fa-2 text-orange me-2"></i>Complete the application form</li>
+                                    <li><i class="fas fa-3 text-orange me-2"></i>Formal inquiry process</li>
+                                    <li><i class="fas fa-4 text-orange me-2"></i>Admission confirmation</li>
+                                </ul>
+                                <div class="contact-info mt-4 pt-3 border-top border-secondary">
+                                    <h5 class="text-white mb-3">Contact Us</h5>
+                                    <p class="text-white-75 mb-2"><i class="fas fa-phone text-orange me-2"></i>89213 04220</p>
+                                    <p class="text-white-75"><i class="fas fa-envelope text-orange me-2"></i>sanjosehome2023@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administration Team -->
+                <div class="col-lg-6">
+                    <div class="feature-card p-4 h-100" style="background-color: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="feature-icon mb-4 text-center">
+                            <i class="fas fa-users fa-3x text-orange"></i>
+                        </div>
+                        <h4 class="text-orange mb-4 text-center">Our Administration</h4>
+                        <div class="admin-team">
+                            <div class="feature-box p-4 rounded-3" style="background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);">
+                                <div class="team-member mb-4">
+                                    <h5 class="text-white mb-2">Director</h5>
+                                    <p class="text-white-75">Sr. Cletty Francis ASMI</p>
+                                </div>
+                                <div class="team-member mb-4">
+                                    <h5 class="text-white mb-2">Assistant Director</h5>
+                                    <p class="text-white-75">Sr. Reena Mary ASMI</p>
+                                </div>
+                                <div class="team-member">
+                                    <h5 class="text-white mb-2">Medical Team Lead</h5>
+                                    <p class="text-white-75">Sr. Dr. Marietta ASMI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -392,7 +645,8 @@
                         <span class="text-white">San Jose</span>
                         <span class="text-orange"> Home</span>
                     </h4>
-                    <p class="text-white-50">Providing care and support for the elderly in Kerala, ensuring dignity and comfort in their golden years.</p>
+                    <p class="text-white-50">Providing care and support for the elderly in Kerala, ensuring dignity and
+                        comfort in their golden years.</p>
                 </div>
 
                 <!-- Address -->
@@ -413,16 +667,14 @@
                     <ul class="list-unstyled footer-contact">
                         <li class="mb-3">
                             <i class="fas fa-envelope text-orange me-2"></i>
-                            <a href="mailto:sanjosehome2023@gmail.com" class="text-white-50">sanjosehome2023@gmail.com</a>
+                            <a href="mailto:sanjosehome2023@gmail.com"
+                                class="text-white-50">sanjosehome2023@gmail.com</a>
                         </li>
                         <li class="mb-3">
                             <i class="fas fa-phone text-orange me-2"></i>
                             <span class="text-white-50">Office/Reception: + 91 89213 04220</span>
                         </li>
-                        <li class="mb-3">
-                            <i class="fas fa-phone text-orange me-2"></i>
-                            <span class="text-white-50">Director: + 91 97785 74319</span>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -434,4 +686,5 @@
         </div>
     </footer>
 </body>
+
 </html>
