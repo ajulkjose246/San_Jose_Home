@@ -1392,3 +1392,16 @@ a {
     margin-bottom: 1rem;
     line-height: 1.5;
 }
+
+/* Custom text justify class */
+.text-justify {
+    text-align: justify !important;
+}
+
+/* Add hyphenation for better text justification */
+.text-justify {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-align: justify !important;
+}
